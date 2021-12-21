@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    body{background-image: url("images/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; }
+
+    #playlist .song .img{
+        border-image:url("images/border.gif");
+    }
+
+</style>
+<body>
+    <div id="playlist .song .img" img src="images/border.gif"></div>
+    <div class="main_div">
+        <div class="music_container">
+
+            <!-- header part -->
+            <div class="head_content">
+                <div class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Now Playing-
+                    </h2>
+                </div>
+                <div class="dots">
+                    <button onclick="open_p()"><i class="fas fa-bars" id="menu"></i></button>
+                </div>
+            </div>
+            <!-- horizontal line -->
+            <div class="striped-border"></div>
+
+            <!-- Music Details -->
+            <h2 id="title">MANN BHARRYAA-2.0</h2>
+            <h3 id="artist">Singer- B.Praak</h3>
+            <div class="img_container">
+                <img src="images/shershah.jpg" alt="image">
+            </div>
+            <audio src="songs/shershah.mp3"></audio>
+
+            <!-- progressBar Area -->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">00:00</div>
+                    <div id="duration">04:26</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-- controls -->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="previous"></i>
+                <i class="fas fa-play main-button" id="play" title="play"></i>
+                <i class="fas fa-forward" id="next" title="next"></i>
+            </div>
+
+            <!-- playlist songs -->
+            <div class="playlist">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- javascript file path -->
+    <script src="main.js"></script>
+</body>
+
+</html>
